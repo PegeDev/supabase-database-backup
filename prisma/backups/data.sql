@@ -279,6 +279,7 @@ c711404d-9c16-46da-91cf-99ea7613be73	INV-20250616-6529	ccc08a36-c269-46ae-a825-3
 67d62e3e-38a8-44ee-8a01-84c3174d55d5	INV-20250614-0485	907416f2-2be7-4491-9629-224be0151727	\N	80000	\N	2025-06-14 07:10:04.508	kg	5	3	2025-06-14 07:10:04.166	delivered	2025-06-14 09:00:00	{"phone": "6287775787570", "address": "Test", "fullName": "Kevin"}	0
 e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	INV-20250615-7076	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	36000	\N	2025-06-15 11:34:32.582	kg	3	3	2025-06-15 11:34:32.097	delivered	2025-06-16 05:00:00	{"phone": "6285692219589", "address": "Warteg ", "fullName": "Ibu fani"}	0
 d97dee3f-fd55-4e55-9c85-c77fad280d04	INV-20250614-1402	8242abaa-8509-4718-a9dc-aca0fb672a3e	\N	120000	\N	2025-06-14 07:42:48.998	kg	15	15	2025-06-14 07:42:48.715	delivered	2025-06-15 11:00:00	{"phone": "6285641298460", "address": "Aster 1 no 10\\n", "fullName": "Leni"}	0
+daa92a85-95d6-465d-8bec-5e3ac33ce4c3	INV-20250619-2110	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	96000	\N	2025-06-19 03:03:34.859	kg	12	12	2025-06-19 03:03:34.265	delivered	2025-06-19 13:00:00	{"phone": "6285885545678", "address": "Bugel indah b7 no 5", "fullName": "Marlina "}	0
 \.
 
 
@@ -291,6 +292,7 @@ ad7d2d96-c7db-46d9-a7e4-6b82fa6553e4	67d62e3e-38a8-44ee-8a01-84c3174d55d5	https:
 d4c74ade-e7b5-4e89-bcdf-fdf5005c9b5a	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	https://utfs.io/f/iSlriPAgTrQNlvmc4hCvn30APg2H4eN7cGs1XTmySuUfoZjR	Peipei	2025-06-15 02:09:01.639	Ok	\N	2025-06-15 02:09:01.642
 919ced4b-ad39-4075-bbb4-8ab86652d19f	d97dee3f-fd55-4e55-9c85-c77fad280d04	https://utfs.io/f/iSlriPAgTrQNaSX1Yx4lNmHMjFZJv47yGnLexBu1Qo0VsO9k	Pelanggan	2025-06-15 09:35:00.601	Di dekat pintu utama rumah	\N	2025-06-15 09:35:00.602
 5a0afdcb-e9e3-4b8b-ac04-00e7c2c94fdf	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	https://utfs.io/f/iSlriPAgTrQNTyt84XDQOgPj3Tf72xqchtDwbmavI4Kn9BzW	Ibu fani	2025-06-16 07:15:46.426	\N	\N	2025-06-16 07:15:46.427
+513086d7-e481-4c68-83b9-e0f24c9f48fe	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	https://utfs.io/f/iSlriPAgTrQNGWFLZwlnBX25A7Q4Uvo8TlIDO3M0wLsqhySj	Marlina	2025-06-20 00:44:31.03	done	\N	2025-06-20 00:44:31.031
 \.
 
 
@@ -371,6 +373,13 @@ aa4640bc-84fd-461a-a83f-f67e37cfd58c	39c21b37-8947-46a9-ab30-4f166359a0d7	pickup
 33fb8cec-c6d1-4d81-a721-429bfcf5a17a	532be3d7-9ce1-4e10-a45e-d33f0501965e	pickup_successful	\n	\N	{"actualUnit": 9, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-16 06:27:06.923	2025-06-16 06:27:06.923
 67598c1f-13ce-4874-8c1b-6877910183a1	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	out_for_delivery		\N	{}	2025-06-16 07:14:27.352	2025-06-16 07:14:27.352
 2e0778c6-0685-458a-8a52-1c91f93da7d5	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNTyt84XDQOgPj3Tf72xqchtDwbmavI4Kn9BzW", "receivedBy": "Ibu fani"}	2025-06-16 07:15:46.382	2025-06-16 07:15:46.382
+1ee06e20-6fb6-4182-93bd-d67c5c5b4117	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-19 03:03:34.859	2025-06-19 03:03:34.859
+62214dbf-fdc0-46c7-8090-77cbc910faf8	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	pickup_successful		\N	{"actualUnit": 12, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-19 03:04:14.838	2025-06-19 03:04:14.838
+c4f4f4a0-82dd-48d4-88c9-694581cd7e68	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	on_progress_washing	 	\N	{}	2025-06-19 03:20:32.621	2025-06-19 03:20:32.621
+2a6e1de7-a2fe-487d-95d7-1c891a340f2a	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	on_progress_drying		\N	{}	2025-06-19 04:40:27.301	2025-06-19 04:40:27.301
+0276be06-0558-4aed-8dff-e9da100cc51f	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-19T13:00:00.000Z"}	2025-06-19 09:26:08.41	2025-06-19 09:26:08.41
+ca51438a-2bc9-4e46-938d-73d30b17479b	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	out_for_delivery		\N	{}	2025-06-20 00:43:41.366	2025-06-20 00:43:41.366
+9a5c94fe-da34-418a-a01b-495c49a31af1	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNGWFLZwlnBX25A7Q4Uvo8TlIDO3M0wLsqhySj", "receivedBy": "Marlina", "deliveryNotes": "done"}	2025-06-20 00:44:30.99	2025-06-20 00:44:30.99
 \.
 
 
