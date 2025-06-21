@@ -166,6 +166,7 @@ e3f77a90-c23f-4917-abf5-b4879fa0ae76	Notif Pickup Berhasil	Halo {name} 👋\n\nP
 COPY "public"."users" ("id", "username", "fullName", "password", "avatar", "phone", "role", "phoneVerified", "address", "createdAt") FROM stdin;
 04cf4dcc-bb43-4367-b980-55fe5f6d1506	BraveShark19	Ardi	\N	\N	6281519981811	super_admin	t	Gardenia Boulevard no 9999	2025-06-06 06:37:44.679
 7881b415-b461-43e9-80d5-9876dd94defd	EagerLion21	PegeDev	\N	\N	6285974781240	super_admin	t	Jl. Kesana Kemari	2025-06-05 07:07:49.089
+f3c9c1fa-7a20-433b-a45d-580c5eacce59	6285692219589	Ibu Fani	\N	\N	6285692219589	user	f	Warteg 	2025-06-20 12:30:54.024
 \.
 
 
@@ -262,21 +263,7 @@ COPY "public"."payment_methods" ("id", "name") FROM stdin;
 --
 
 COPY "public"."transactions" ("id", "code", "service_id", "payment_id", "amount", "userId", "createdAt", "typeUnit", "actualUnit", "estimatedUnit", "schedulePickup", "currentStatus", "scheduleDelivery", "customer", "rescheduleCount") FROM stdin;
-3b944850-030f-4353-a70e-d22d7d9b1daa	INV-20250609-1032	8242abaa-8509-4718-a9dc-aca0fb672a3e	54133119-effb-4601-9df0-98f4d1a56a4f	96000	\N	2025-06-09 05:06:23.174	kg	12	8	2025-06-09 05:06:22.661	pickup_successful	\N	{"phone": "6285974781240", "address": "Jalan Kesana Kemari", "fullName": "Alfath"}	0
-317bf6fb-895e-4459-b0e8-6baf70338f75	INV-20250605-1325	8242abaa-8509-4718-a9dc-aca0fb672a3e	\N	96000	7881b415-b461-43e9-80d5-9876dd94defd	2025-06-05 14:52:27.017	kg	12	6	2025-06-05 15:00:00	pickup_successful	\N	\N	0
-8952477d-fd91-444e-b544-00bc37d528e6	INV-20250610-6809	1385480f-42f7-472b-bb9b-970e12d49b2f	\N	20000	7881b415-b461-43e9-80d5-9876dd94defd	2025-06-09 17:27:38.311	kg	\N	2	2025-06-09 19:00:00	scheduled	\N	\N	0
-fcda118f-6f32-4cc1-b05d-e3b2dce69e27	INV-20250610-2785	1385480f-42f7-472b-bb9b-970e12d49b2f	172f7b84-6174-4c4a-b861-cc794e41e6d4	60000	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-06-10 10:49:25.525	kg	6	5	2025-06-10 13:00:00	scheduled_for_delivery	2025-06-11 03:00:00	\N	0
-b083ae04-bef2-466c-b73d-498a974cffab	INV-20250611-0493	8242abaa-8509-4718-a9dc-aca0fb672a3e	\N	96000	7881b415-b461-43e9-80d5-9876dd94defd	2025-06-11 06:29:52.161	kg	\N	12	2025-06-11 19:00:00	scheduled	\N	\N	0
-106bc3e3-744a-43d1-97c0-563f06791ef6	INV-20250612-9725	9dffe679-a323-4050-b3d7-a771c81ce3b2	\N	48000	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-06-12 05:39:26.69	kg	\N	4	2025-06-14 07:00:00	scheduled	\N	\N	0
-aeb420be-592a-42c4-9ca8-703e903ca187	INV-20250612-7160	1385480f-42f7-472b-bb9b-970e12d49b2f	\N	50000	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-06-12 05:52:09.979	kg	\N	5	2025-06-12 07:00:00	scheduled	\N	\N	0
-9dd4def9-b919-4770-bc2a-d825624ae78e	INV-20250612-6243	1385480f-42f7-472b-bb9b-970e12d49b2f	\N	70000	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-06-12 05:53:16.581	kg	\N	7	2025-06-12 07:00:00	scheduled	\N	\N	0
-fe37c1ff-f8dc-43ab-8325-b76c489495d4	INV-20250614-0873	9dffe679-a323-4050-b3d7-a771c81ce3b2	\N	60000	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-06-14 07:05:01.779	kg	\N	5	2025-06-14 09:00:00	scheduled	\N	\N	0
-136e388b-c103-4c46-9718-4491c3cbf099	INV-20250614-2724	9dffe679-a323-4050-b3d7-a771c81ce3b2	\N	60000	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-06-14 07:05:58.849	kg	\N	5	2025-06-14 09:00:00	scheduled	\N	\N	0
-39c21b37-8947-46a9-ab30-4f166359a0d7	INV-20250616-6130	8242abaa-8509-4718-a9dc-aca0fb672a3e	\N	32000	\N	2025-06-16 05:01:31.728	kg	\N	4	2025-06-16 05:01:31.275	pickup_successful	\N	{"phone": "62816752340", "address": "Tes", "fullName": "Farina"}	0
-c711404d-9c16-46da-91cf-99ea7613be73	INV-20250616-6529	ccc08a36-c269-46ae-a825-3857a119d369	\N	24000	\N	2025-06-16 05:03:24.829	kg	\N	2	2025-06-16 05:03:24.581	scheduled	\N	{"phone": "6287555", "address": "A", "fullName": "F"}	0
-2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	INV-20250614-7074	8242abaa-8509-4718-a9dc-aca0fb672a3e	54133119-effb-4601-9df0-98f4d1a56a4f	120000	\N	2025-06-14 08:09:23.64	kg	15	15	2025-06-14 08:09:23.209	delivered	2025-06-15 03:00:00	{"phone": "6281973310097", "address": "Test..", "fullName": "Peipei"}	0
-532be3d7-9ce1-4e10-a45e-d33f0501965e	INV-20250616-2832	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	108000	\N	2025-06-16 06:25:03.491	kg	9	5	2025-06-16 06:25:03.246	pickup_successful	\N	{"phone": "62816752340", "address": "Bugel", "fullName": "Fardot"}	0
-67d62e3e-38a8-44ee-8a01-84c3174d55d5	INV-20250614-0485	907416f2-2be7-4491-9629-224be0151727	\N	80000	\N	2025-06-14 07:10:04.508	kg	5	3	2025-06-14 07:10:04.166	delivered	2025-06-14 09:00:00	{"phone": "6287775787570", "address": "Test", "fullName": "Kevin"}	0
+48b99594-ce28-4197-9361-080749e6e0d4	INV-20250620-3405	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	48000	f3c9c1fa-7a20-433b-a45d-580c5eacce59	2025-06-20 12:30:54.127	kg	4	4	2025-06-20 12:30:53.921	on_progress_drying	\N	\N	0
 e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	INV-20250615-7076	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	36000	\N	2025-06-15 11:34:32.582	kg	3	3	2025-06-15 11:34:32.097	delivered	2025-06-16 05:00:00	{"phone": "6285692219589", "address": "Warteg ", "fullName": "Ibu fani"}	0
 d97dee3f-fd55-4e55-9c85-c77fad280d04	INV-20250614-1402	8242abaa-8509-4718-a9dc-aca0fb672a3e	\N	120000	\N	2025-06-14 07:42:48.998	kg	15	15	2025-06-14 07:42:48.715	delivered	2025-06-15 11:00:00	{"phone": "6285641298460", "address": "Aster 1 no 10\\n", "fullName": "Leni"}	0
 daa92a85-95d6-465d-8bec-5e3ac33ce4c3	INV-20250619-2110	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	96000	\N	2025-06-19 03:03:34.859	kg	12	12	2025-06-19 03:03:34.265	delivered	2025-06-19 13:00:00	{"phone": "6285885545678", "address": "Bugel indah b7 no 5", "fullName": "Marlina "}	0
@@ -288,8 +275,6 @@ daa92a85-95d6-465d-8bec-5e3ac33ce4c3	INV-20250619-2110	8242abaa-8509-4718-a9dc-a
 --
 
 COPY "public"."delivery_proofs" ("id", "transactionId", "image", "receivedBy", "receivedAt", "notes", "signature", "createdAt") FROM stdin;
-ad7d2d96-c7db-46d9-a7e4-6b82fa6553e4	67d62e3e-38a8-44ee-8a01-84c3174d55d5	https://utfs.io/f/iSlriPAgTrQNUZCcIwTiQDsSh1H2CrGJFtb9kW7OpfYEoxcU	Kevin	2025-06-14 07:13:03.504	\N	\N	2025-06-14 07:13:03.507
-d4c74ade-e7b5-4e89-bcdf-fdf5005c9b5a	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	https://utfs.io/f/iSlriPAgTrQNlvmc4hCvn30APg2H4eN7cGs1XTmySuUfoZjR	Peipei	2025-06-15 02:09:01.639	Ok	\N	2025-06-15 02:09:01.642
 919ced4b-ad39-4075-bbb4-8ab86652d19f	d97dee3f-fd55-4e55-9c85-c77fad280d04	https://utfs.io/f/iSlriPAgTrQNaSX1Yx4lNmHMjFZJv47yGnLexBu1Qo0VsO9k	Pelanggan	2025-06-15 09:35:00.601	Di dekat pintu utama rumah	\N	2025-06-15 09:35:00.602
 5a0afdcb-e9e3-4b8b-ac04-00e7c2c94fdf	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	https://utfs.io/f/iSlriPAgTrQNTyt84XDQOgPj3Tf72xqchtDwbmavI4Kn9BzW	Ibu fani	2025-06-16 07:15:46.426	\N	\N	2025-06-16 07:15:46.427
 513086d7-e481-4c68-83b9-e0f24c9f48fe	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	https://utfs.io/f/iSlriPAgTrQNGWFLZwlnBX25A7Q4Uvo8TlIDO3M0wLsqhySj	Marlina	2025-06-20 00:44:31.03	done	\N	2025-06-20 00:44:31.031
@@ -309,7 +294,6 @@ COPY "public"."phone_verified_tokens" ("id", "userId", "token", "expiredAt") FRO
 --
 
 COPY "public"."sessions" ("id", "userId", "expiresAt") FROM stdin;
-j5nddfbtf3evetwrz4qbt2erowoqwes6epxlfqjt	7881b415-b461-43e9-80d5-9876dd94defd	2025-07-05 07:08:07.137
 okdjwiageaqkeepg5uhdv34hsa67dltratsn3mbv	7881b415-b461-43e9-80d5-9876dd94defd	2025-07-05 08:52:13.989
 wecqyz554eyr3towimvjf4yobjyonsn365eipw5z	7881b415-b461-43e9-80d5-9876dd94defd	2025-07-05 09:24:21.324
 lnsc7hruzrl3vphb7r6pbjgbgbwqrndqspu6rtik	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-07-06 06:38:10.057
@@ -323,6 +307,7 @@ uxo5ti6cz46ri6gleje7w2yoxj33kjla7m46ifan	7881b415-b461-43e9-80d5-9876dd94defd	20
 4mkmp5zeudbvfxnhr7fis7xupfsqkfelfq256wwk	7881b415-b461-43e9-80d5-9876dd94defd	2025-07-13 16:09:03.907
 d4m57q7ldbfwsvyitmebb7k4ykiv7deesv6ejz6j	04cf4dcc-bb43-4367-b980-55fe5f6d1506	2025-07-14 07:08:50.77
 cv5eldbo4svrvoahcvrkhuf5pcrvc6yfw6rucmn7	7881b415-b461-43e9-80d5-9876dd94defd	2025-07-16 05:49:52.002
+j5nddfbtf3evetwrz4qbt2erowoqwes6epxlfqjt	7881b415-b461-43e9-80d5-9876dd94defd	2025-07-20 07:10:49.285
 \.
 
 
@@ -331,32 +316,10 @@ cv5eldbo4svrvoahcvrkhuf5pcrvc6yfw6rucmn7	7881b415-b461-43e9-80d5-9876dd94defd	20
 --
 
 COPY "public"."status_histories" ("id", "transaction_id", "status", "notes", "changedBy", "metadata", "timestamp", "createdAt") FROM stdin;
-b416cfb8-d657-4b91-97fe-73da166a1fb8	3b944850-030f-4353-a70e-d22d7d9b1daa	scheduled	Transaction created manually by admin	7881b415-b461-43e9-80d5-9876dd94defd	\N	2025-06-09 05:06:23.174	2025-06-09 05:06:23.174
-bd78e074-1233-42a8-9728-d841610a2eb0	3b944850-030f-4353-a70e-d22d7d9b1daa	pickup_successful		\N	{"actualUnit": 12, "paymentMethod": "54133119-effb-4601-9df0-98f4d1a56a4f"}	2025-06-09 09:50:42.025	2025-06-09 09:50:42.025
-0e6d71d3-f8ef-4f46-a5bc-4a1dd8ccf849	317bf6fb-895e-4459-b0e8-6baf70338f75	pickup_successful		\N	{"actualUnit": 12}	2025-06-09 11:37:06.312	2025-06-09 11:37:06.312
-01ee1ac8-c71f-47f7-b9c0-64c88080e277	fcda118f-6f32-4cc1-b05d-e3b2dce69e27	pickup_successful		\N	{"actualUnit": 6, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-10 10:50:38.127	2025-06-10 10:50:38.127
-db3965b5-b33a-47db-bbd2-388440c0213c	fcda118f-6f32-4cc1-b05d-e3b2dce69e27	on_progress_washing		\N	{}	2025-06-10 10:51:01.974	2025-06-10 10:51:01.974
-428766d0-836b-4220-a5ca-2ac9c1f0693d	fcda118f-6f32-4cc1-b05d-e3b2dce69e27	on_progress_drying		\N	{}	2025-06-10 10:51:26.791	2025-06-10 10:51:26.791
-0f6a349a-7908-47a1-8a39-d88146dbd026	fcda118f-6f32-4cc1-b05d-e3b2dce69e27	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-11T03:00:00.000Z"}	2025-06-10 10:51:46.141	2025-06-10 10:51:46.141
-775fe6b6-4e7d-4b67-a048-139606bf753a	67d62e3e-38a8-44ee-8a01-84c3174d55d5	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-14 07:10:04.508	2025-06-14 07:10:04.508
-4fe94994-b807-48ce-8884-314ce7da3d22	67d62e3e-38a8-44ee-8a01-84c3174d55d5	pickup_successful		\N	{"actualUnit": 5}	2025-06-14 07:10:37.517	2025-06-14 07:10:37.517
-684f959a-ab43-4fac-80a1-7688b305c3b2	67d62e3e-38a8-44ee-8a01-84c3174d55d5	on_progress_washing		\N	{}	2025-06-14 07:10:59.381	2025-06-14 07:10:59.381
-e2607025-14b2-46ad-9b32-16c96795a96a	67d62e3e-38a8-44ee-8a01-84c3174d55d5	on_progress_drying		\N	{}	2025-06-14 07:11:11.657	2025-06-14 07:11:11.657
-711ff976-d393-40fe-bdee-1a30c0bd27cf	67d62e3e-38a8-44ee-8a01-84c3174d55d5	on_progress_ironing		\N	{}	2025-06-14 07:11:25.693	2025-06-14 07:11:25.693
-8aceb761-7344-4a57-85f6-f8a90acad4ec	67d62e3e-38a8-44ee-8a01-84c3174d55d5	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-14T09:00:00.000Z"}	2025-06-14 07:11:32.567	2025-06-14 07:11:32.567
-61c4c4f8-e90f-4bc4-9e36-ed2b9da32958	67d62e3e-38a8-44ee-8a01-84c3174d55d5	out_for_delivery		\N	{}	2025-06-14 07:11:46.529	2025-06-14 07:11:46.529
-b4d57c45-ad99-4842-be52-ab492fc457f7	67d62e3e-38a8-44ee-8a01-84c3174d55d5	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNUZCcIwTiQDsSh1H2CrGJFtb9kW7OpfYEoxcU", "receivedBy": "Kevin"}	2025-06-14 07:13:03.463	2025-06-14 07:13:03.463
 a8fd784e-a8c5-4298-b207-7c5783d4b39d	d97dee3f-fd55-4e55-9c85-c77fad280d04	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-14 07:42:48.998	2025-06-14 07:42:48.998
 12759c62-70ba-459a-a937-d72a72a444b7	d97dee3f-fd55-4e55-9c85-c77fad280d04	pickup_successful		\N	{"actualUnit": 15}	2025-06-14 07:43:33.164	2025-06-14 07:43:33.164
 717db77f-666d-47c0-86c0-c7f15707a32e	d97dee3f-fd55-4e55-9c85-c77fad280d04	on_progress_washing		\N	{}	2025-06-14 07:55:52.923	2025-06-14 07:55:52.923
-09b777de-cbd5-4181-adaa-cc2fe10ac291	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-14 08:09:23.64	2025-06-14 08:09:23.64
-0c0e4c27-e337-4cb6-97ef-edd36bd0e4eb	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	pickup_successful		\N	{"actualUnit": 15, "paymentMethod": "54133119-effb-4601-9df0-98f4d1a56a4f"}	2025-06-14 08:09:53.751	2025-06-14 08:09:53.751
-663141f8-e143-4700-baca-6e6dc5548e5b	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	on_progress_washing		\N	{}	2025-06-14 08:19:41.653	2025-06-14 08:19:41.653
 62d17bf9-e8ce-4349-9ed6-e24726266f6a	d97dee3f-fd55-4e55-9c85-c77fad280d04	on_progress_drying		\N	{}	2025-06-14 10:11:26.892	2025-06-14 10:11:26.892
-399e46eb-7b32-48de-b4c3-29f47ad0310e	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	on_progress_drying		\N	{}	2025-06-15 02:06:47.241	2025-06-15 02:06:47.241
-39d369a5-3ecd-40cc-a99f-5a7d4fb5339d	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-15T03:00:00.000Z"}	2025-06-15 02:07:00.258	2025-06-15 02:07:00.258
-a5b5264c-88a4-4c6b-99f8-caabeee59670	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	out_for_delivery		\N	{}	2025-06-15 02:07:05.683	2025-06-15 02:07:05.683
-e5209c1c-0458-448e-96f2-23ee7c5734e6	2d9e5e0f-6b00-4235-aaf0-2caa7143d5c4	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNlvmc4hCvn30APg2H4eN7cGs1XTmySuUfoZjR", "receivedBy": "Peipei", "deliveryNotes": "Ok"}	2025-06-15 02:09:01.595	2025-06-15 02:09:01.595
 a45a842a-df59-4985-8d15-c1f1533cd56a	d97dee3f-fd55-4e55-9c85-c77fad280d04	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-15T11:00:00.000Z"}	2025-06-15 09:23:52.23	2025-06-15 09:23:52.23
 820fe800-114b-49e4-a7d7-a35ee9429a71	d97dee3f-fd55-4e55-9c85-c77fad280d04	out_for_delivery		\N	{}	2025-06-15 09:34:08.824	2025-06-15 09:34:08.824
 4227ab1e-edbb-49d9-a79d-c70e100360df	d97dee3f-fd55-4e55-9c85-c77fad280d04	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNaSX1Yx4lNmHMjFZJv47yGnLexBu1Qo0VsO9k", "deliveryNotes": "Di dekat pintu utama rumah"}	2025-06-15 09:35:00.561	2025-06-15 09:35:00.561
@@ -366,11 +329,6 @@ e9abbd4d-a949-40c7-b918-3900217397f6	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	on_pro
 864a4757-05be-4153-ac3b-6d641c87565c	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	on_progress_drying		\N	{}	2025-06-15 14:38:59.446	2025-06-15 14:38:59.446
 22e452df-40df-4ba9-b79b-4b9a7732bdc4	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	on_progress_ironing		\N	{}	2025-06-16 04:05:54.161	2025-06-16 04:05:54.161
 10bf4cc9-e1d7-4f5a-be18-ce4505fc671e	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-16T05:00:00.000Z"}	2025-06-16 04:50:11.112	2025-06-16 04:50:11.112
-0205fb07-23bd-4caf-811b-8b3d5a0581aa	39c21b37-8947-46a9-ab30-4f166359a0d7	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-16 05:01:31.728	2025-06-16 05:01:31.728
-aa4640bc-84fd-461a-a83f-f67e37cfd58c	39c21b37-8947-46a9-ab30-4f166359a0d7	pickup_successful		\N	{}	2025-06-16 05:01:45.554	2025-06-16 05:01:45.554
-5a082846-f6f8-4af9-9fc3-b0a8c603a58b	c711404d-9c16-46da-91cf-99ea7613be73	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-16 05:03:24.829	2025-06-16 05:03:24.829
-9ce1c619-f1dd-47df-b59d-c5243fc54a18	532be3d7-9ce1-4e10-a45e-d33f0501965e	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-16 06:25:03.491	2025-06-16 06:25:03.491
-33fb8cec-c6d1-4d81-a721-429bfcf5a17a	532be3d7-9ce1-4e10-a45e-d33f0501965e	pickup_successful	\n	\N	{"actualUnit": 9, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-16 06:27:06.923	2025-06-16 06:27:06.923
 67598c1f-13ce-4874-8c1b-6877910183a1	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	out_for_delivery		\N	{}	2025-06-16 07:14:27.352	2025-06-16 07:14:27.352
 2e0778c6-0685-458a-8a52-1c91f93da7d5	e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNTyt84XDQOgPj3Tf72xqchtDwbmavI4Kn9BzW", "receivedBy": "Ibu fani"}	2025-06-16 07:15:46.382	2025-06-16 07:15:46.382
 1ee06e20-6fb6-4182-93bd-d67c5c5b4117	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-19 03:03:34.859	2025-06-19 03:03:34.859
@@ -380,6 +338,10 @@ c4f4f4a0-82dd-48d4-88c9-694581cd7e68	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	on_pro
 0276be06-0558-4aed-8dff-e9da100cc51f	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-19T13:00:00.000Z"}	2025-06-19 09:26:08.41	2025-06-19 09:26:08.41
 ca51438a-2bc9-4e46-938d-73d30b17479b	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	out_for_delivery		\N	{}	2025-06-20 00:43:41.366	2025-06-20 00:43:41.366
 9a5c94fe-da34-418a-a01b-495c49a31af1	daa92a85-95d6-465d-8bec-5e3ac33ce4c3	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNGWFLZwlnBX25A7Q4Uvo8TlIDO3M0wLsqhySj", "receivedBy": "Marlina", "deliveryNotes": "done"}	2025-06-20 00:44:30.99	2025-06-20 00:44:30.99
+986ad9e9-1392-440d-8e09-d88b0769ce58	48b99594-ce28-4197-9361-080749e6e0d4	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-20 12:30:54.127	2025-06-20 12:30:54.127
+0f154e50-e41b-4b26-aa9f-e118fb47b2ca	48b99594-ce28-4197-9361-080749e6e0d4	pickup_successful		\N	{"actualUnit": 4, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-20 12:31:18.133	2025-06-20 12:31:18.133
+7f484269-3132-4649-9890-f3e1e4a97117	48b99594-ce28-4197-9361-080749e6e0d4	on_progress_washing		\N	{}	2025-06-20 12:31:24.97	2025-06-20 12:31:24.97
+7604457c-3177-457f-bdbe-77cfb1a08823	48b99594-ce28-4197-9361-080749e6e0d4	on_progress_drying		\N	{}	2025-06-20 15:27:28.631	2025-06-20 15:27:28.631
 \.
 
 
