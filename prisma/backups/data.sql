@@ -153,9 +153,9 @@ a2dfa75e-bbeb-4799-ae7a-0b7a5433d2ae	Notif Ironing	Halo {name} 👋\n\nPesanan d
 9882b623-b7e1-4607-9104-fb9431a946f2	Notif Gagal Pickup	Halo {name} 👋\n\nPesanan dengan Kode: {code}\n\n❌ Pesanan Anda gagal dijemput.\n\nSilakan hubungi kami jika ini sebuah kesalahan.	pickup_failed	t	2025-06-05 07:32:59.46	2025-06-05 07:32:59.46	PegeDev	{name,code}	transaction_update
 bccd2354-f396-4f90-95f9-d5661d4ab84b	Notif Washing	Halo {name} 👋\n\nPesanan dengan Kode: {code}\n\n🧼 Status terbaru: {status}\n\nPakaian Anda sedang dalam tahap pencucian.	on_progress_washing	t	2025-06-05 07:33:31.291	2025-06-05 07:33:31.291	PegeDev	{name,code,status}	transaction_update
 a95b670d-8668-4c1d-aa6c-8b164e81f7f3	Notif Schedulled Pickup	Halo {name} 👋!\nTerima kasih telah memilih layanan kami!\n\nOrder ID : {code}\n✅ Status: {status}\n✅ Cucian Anda sudah dijadwalkan untuk pickup.\n🕒 Jadwal: {date_pickup}\n📍 Alamat: {address}\nJika ingin ubah / batalkan jadwal, klik: \n\nhttps://www.laundryandchill.id/account/history\n\nTerima Kasih.	scheduled	t	2025-06-05 07:34:13.871	2025-06-12 05:53:06.269	PegeDev	{name,code,status,date_pickup,address}	transaction_update
-7b9b4105-8d99-42a2-81c0-642eca6e59e7	Notif Schedulled Delivery	Halo {name} 👋.\n\nPesanan dengan Kode: {code}\n\nStatus transaksi Anda: {status}\n\n🚚 Tanggal pengantaran: {date_delivery}\n\nKami akan mengirimkan notifikasi saat kurir dalam perjalanan.	scheduled_for_delivery	t	2025-06-05 07:39:49.502	2025-06-05 07:40:02.149	PegeDev	{name,code,status,date_delivery}	transaction_update
+e3f77a90-c23f-4917-abf5-b4879fa0ae76	Notif Pickup Berhasil	Halo {name} 👋\n\nPesanan dengan Kode: {code}\n✅ Pakaian Anda telah kami terima. \n\nStatus saat ini: {status}\n\nPakaian akan segera diproses.	pickup_successful	t	2025-06-05 07:33:51.199	2025-06-23 11:40:36.657	PegeDev	{name,code,status}	transaction_update
 584c6f09-fdde-4fcf-afec-a2a9cbc0f1ab	Notif Cancel	Halo {name}!\n\npesanan kamu dengan kode: {code}, berhasil dicancel!\n\n_Terimakasih sudah menggunakan layanan kami._	cancelled	t	2025-06-05 07:34:25.76	2025-06-05 08:34:57.993	PegeDev	{name,code}	transaction_update
-e3f77a90-c23f-4917-abf5-b4879fa0ae76	Notif Pickup Berhasil	Halo {name} 👋\n\nPesanan dengan Kode: {code}\n✅ Pakaian Anda telah berhasil dijemput!\n\nStatus saat ini: {status}\n\nPakaian akan segera diproses.	pickup_successful	t	2025-06-05 07:33:51.199	2025-06-09 11:24:32.66	PegeDev	{name,code,status}	transaction_update
+7b9b4105-8d99-42a2-81c0-642eca6e59e7	Notif Schedulled Delivery	Halo {name} 👋.\n\nPesanan dengan Kode: {code}\n\nStatus transaksi Anda: {status}\n\nSiap di antar. \n\nKami akan mengirimkan notifikasi saat kurir dalam perjalanan.	scheduled_for_delivery	t	2025-06-05 07:39:49.502	2025-06-23 13:56:04.901	PegeDev	{name,code,status}	transaction_update
 \.
 
 
@@ -169,6 +169,8 @@ f3c9c1fa-7a20-433b-a45d-580c5eacce59	6285692219589	Ibu Fani	\N	\N	6285692219589	
 034ccd5d-8077-46ec-8872-31f64a1a2bfc	6281299071805	Yeni	\N	\N	6281299071805	user	f	Gardenia 7 no 28	2025-06-21 08:33:34.188
 b3979e8c-301e-4975-acc5-02b918eea8e3	6285641298460	Leni	\N	\N	6285641298460	user	f	Cluster Aster 1 no 10	2025-06-22 06:07:20.706
 7881b415-b461-43e9-80d5-9876dd94defd	EagerLion21	PegeDev	\N	\N	6285974781240	super_admin	t	Jl. Kesana Kemari	2025-06-05 07:07:49.089
+26ec8c93-3732-4fd7-a29f-5d58525457b4	62895384501721	Kak Sefti	\N	\N	62895384501721	user	f	Walk in cust	2025-06-23 02:50:18.359
+6cf0f39d-1c83-46e5-871a-13ad7173ed22	6281310176309	Tania	\N	\N	6281310176309	user	f	Aster 1 no 11	2025-06-23 10:53:37.183
 \.
 
 
@@ -196,6 +198,7 @@ d3f510f8-de2e-4c1b-920e-f30df1981bc3	Satuan Regular	Layanan laundry satuan untuk
 8cbd3351-ed0b-4aae-aa55-6f81eefa39cd	Satuan Baby Friendly	Layanan laundry satuan untuk bedcover, selimut, comforter, duvet dan bed linen set (termasuk 2 sarung bantal dan guling) menggunakan detergent khusus pakaian bayi	https://utfs.io/f/iSlriPAgTrQNclIhfiGgz6JHsNlk9G81fd7eEhryToQqa42Z	45000	kg
 737d1f76-0138-4e93-beb5-72ffcf6b689d	Spot Cleaning Kerah	Pembersihan khusus kerah bagian luar dan dalam	https://utfs.io/f/iSlriPAgTrQNT92k2SDQOgPj3Tf72xqchtDwbmavI4Kn9BzW	15000	kg
 f77e9ad8-fcd2-4f7c-9027-9a59e5ada498	Spot cleaning underarm	Spot cleaning untuk bagian bawah lengan kiri dan kanan	https://utfs.io/f/iSlriPAgTrQN7klDqILrhXAtECUoHNpYvPk1awneODzMlxIJ	17500	kg
+754e3d45-1add-4b47-83b8-c56f7d6df21f	Whole spot clean small	Pembersihan noda luntur di baju ukuran small	https://utfs.io/f/iSlriPAgTrQNpKnOS5HeDCXomcFwlzhZxTGLS1rKRgq64NPQ	20000	kg
 \.
 
 
@@ -268,10 +271,12 @@ COPY "public"."payment_methods" ("id", "name") FROM stdin;
 
 COPY "public"."transactions" ("id", "code", "service_id", "payment_id", "amount", "userId", "createdAt", "typeUnit", "actualUnit", "estimatedUnit", "schedulePickup", "currentStatus", "scheduleDelivery", "customer", "rescheduleCount") FROM stdin;
 588ff063-ab5b-4a8d-b21a-580d0b6967a8	INV-20250622-2094	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	70400	b3979e8c-301e-4975-acc5-02b918eea8e3	2025-06-22 06:07:20.817	kg	8.8	1	2025-06-22 06:07:20.602	delivered	2025-06-22 11:00:00	\N	0
+c422f4b8-1eb5-49aa-9197-e4ef42342457	INV-20250623-5779	754e3d45-1add-4b47-83b8-c56f7d6df21f	54133119-effb-4601-9df0-98f4d1a56a4f	20000	26ec8c93-3732-4fd7-a29f-5d58525457b4	2025-06-23 02:50:18.477	kg	1	1	2025-06-23 02:50:18.25	pickup_successful	\N	\N	0
 48b99594-ce28-4197-9361-080749e6e0d4	INV-20250620-3405	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	48000	f3c9c1fa-7a20-433b-a45d-580c5eacce59	2025-06-20 12:30:54.127	kg	4	4	2025-06-20 12:30:53.921	delivered	2025-06-21 07:00:00	\N	0
 e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	INV-20250615-7076	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	36000	\N	2025-06-15 11:34:32.582	kg	3	3	2025-06-15 11:34:32.097	delivered	2025-06-16 05:00:00	{"phone": "6285692219589", "address": "Warteg ", "fullName": "Ibu fani"}	0
 d97dee3f-fd55-4e55-9c85-c77fad280d04	INV-20250614-1402	8242abaa-8509-4718-a9dc-aca0fb672a3e	\N	120000	\N	2025-06-14 07:42:48.998	kg	15	15	2025-06-14 07:42:48.715	delivered	2025-06-15 11:00:00	{"phone": "6285641298460", "address": "Aster 1 no 10\\n", "fullName": "Leni"}	0
 daa92a85-95d6-465d-8bec-5e3ac33ce4c3	INV-20250619-2110	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	96000	\N	2025-06-19 03:03:34.859	kg	12	12	2025-06-19 03:03:34.265	delivered	2025-06-19 13:00:00	{"phone": "6285885545678", "address": "Bugel indah b7 no 5", "fullName": "Marlina "}	0
+cc682487-bc7a-48e7-a2ff-72a6048576e3	INV-20250623-0039	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	44000	6cf0f39d-1c83-46e5-871a-13ad7173ed22	2025-06-23 10:53:37.303	kg	5.5	5	2025-06-23 10:53:37.078	scheduled_for_delivery	2025-06-23 15:00:00	\N	0
 4e00a583-c47c-4053-9b2e-3532b36a52f4	INV-20250621-1913	d3f510f8-de2e-4c1b-920e-f30df1981bc3	\N	35000	034ccd5d-8077-46ec-8872-31f64a1a2bfc	2025-06-21 08:33:34.296	kg	\N	1	2025-06-21 08:33:34.073	pickup_successful	\N	\N	0
 \.
 
@@ -364,6 +369,13 @@ dc3b877f-d214-473b-a4b4-8aea7808bd7d	588ff063-ab5b-4a8d-b21a-580d0b6967a8	on_pro
 c72b12cc-0496-430d-977a-2a7c9c346096	588ff063-ab5b-4a8d-b21a-580d0b6967a8	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-22T11:00:00.000Z"}	2025-06-22 10:28:05.144	2025-06-22 10:28:05.144
 f128d2cc-8898-43f4-8606-349cf2f3b559	588ff063-ab5b-4a8d-b21a-580d0b6967a8	out_for_delivery		\N	{}	2025-06-22 10:58:37.061	2025-06-22 10:58:37.061
 1071f4ac-f4a6-4415-b76b-f6b4fcbf4769	588ff063-ab5b-4a8d-b21a-580d0b6967a8	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNbT1YnfQJ9HA6EceRDQ0wBXL2FrSkfosl8P1K", "receivedBy": "Drop depan rumah"}	2025-06-22 11:02:19.108	2025-06-22 11:02:19.108
+b9120cbc-6fdb-4c39-82c6-5fdd525df04c	c422f4b8-1eb5-49aa-9197-e4ef42342457	scheduled	Pickup kamis	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-23 02:50:18.477	2025-06-23 02:50:18.477
+2c276e48-bae5-464f-88cf-21f73cd32729	c422f4b8-1eb5-49aa-9197-e4ef42342457	pickup_successful		\N	{"actualUnit": 1, "paymentMethod": "54133119-effb-4601-9df0-98f4d1a56a4f"}	2025-06-23 02:50:57.072	2025-06-23 02:50:57.072
+8670e70d-4cf5-401c-8eb9-eb57a96c2e86	cc682487-bc7a-48e7-a2ff-72a6048576e3	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-23 10:53:37.303	2025-06-23 10:53:37.303
+5cdea9b8-b919-468c-822a-505faf24a07e	cc682487-bc7a-48e7-a2ff-72a6048576e3	pickup_successful		\N	{"actualUnit": 5.5, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-23 10:53:54.46	2025-06-23 10:53:54.46
+6e4a1a01-0346-41aa-a610-c718fcb4b032	cc682487-bc7a-48e7-a2ff-72a6048576e3	on_progress_washing		\N	{}	2025-06-23 11:05:53.739	2025-06-23 11:05:53.739
+21ba718b-9252-47b0-a49c-48429e001727	cc682487-bc7a-48e7-a2ff-72a6048576e3	on_progress_drying		\N	{}	2025-06-23 12:46:47.241	2025-06-23 12:46:47.241
+cbb0410a-a417-4a4e-a02e-367537cbdeba	cc682487-bc7a-48e7-a2ff-72a6048576e3	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-23T15:00:00.000Z"}	2025-06-23 13:56:43.465	2025-06-23 13:56:43.465
 \.
 
 
