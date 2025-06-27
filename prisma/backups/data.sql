@@ -154,8 +154,8 @@ a2dfa75e-bbeb-4799-ae7a-0b7a5433d2ae	Notif Ironing	Halo {name} 👋\n\nPesanan d
 bccd2354-f396-4f90-95f9-d5661d4ab84b	Notif Washing	Halo {name} 👋\n\nPesanan dengan Kode: {code}\n\n🧼 Status terbaru: {status}\n\nPakaian Anda sedang dalam tahap pencucian.	on_progress_washing	t	2025-06-05 07:33:31.291	2025-06-05 07:33:31.291	PegeDev	{name,code,status}	transaction_update
 a95b670d-8668-4c1d-aa6c-8b164e81f7f3	Notif Schedulled Pickup	Halo {name} 👋!\nTerima kasih telah memilih layanan kami!\n\nOrder ID : {code}\n✅ Status: {status}\n✅ Cucian Anda sudah dijadwalkan untuk pickup.\n🕒 Jadwal: {date_pickup}\n📍 Alamat: {address}\nJika ingin ubah / batalkan jadwal, klik: \n\nhttps://www.laundryandchill.id/account/history\n\nTerima Kasih.	scheduled	t	2025-06-05 07:34:13.871	2025-06-12 05:53:06.269	PegeDev	{name,code,status,date_pickup,address}	transaction_update
 584c6f09-fdde-4fcf-afec-a2a9cbc0f1ab	Notif Cancel	Halo {name}!\n\npesanan kamu dengan kode: {code}, berhasil dicancel!\n\n_Terimakasih sudah menggunakan layanan kami._	cancelled	t	2025-06-05 07:34:25.76	2025-06-05 08:34:57.993	PegeDev	{name,code}	transaction_update
-7b9b4105-8d99-42a2-81c0-642eca6e59e7	Notif Schedulled Delivery	Halo {name} 👋.\n\nPesanan dengan Kode: {code}\n\nStatus transaksi Anda: {status}\n\nSiap di antar. \n\nKami akan mengirimkan notifikasi saat kurir dalam perjalanan.	scheduled_for_delivery	t	2025-06-05 07:39:49.502	2025-06-23 13:56:04.901	PegeDev	{name,code,status}	transaction_update
 e3f77a90-c23f-4917-abf5-b4879fa0ae76	Notif Pickup Berhasil	Halo {name} 👋\n\nPesanan dengan Kode: {code}\n✅ Pakaian Anda telah kami terima.\n\nPakaian akan segera diproses.	pickup_successful	t	2025-06-05 07:33:51.199	2025-06-25 07:28:57.255	PegeDev	{name,code}	transaction_update
+7b9b4105-8d99-42a2-81c0-642eca6e59e7	Notif Schedulled Delivery	Halo {name} 👋.\n\nPesanan dengan Kode: {code} sudah selesai. \n\nLaundry anda Siap di antar atau di pickup di toko. \n\nKabari kami ya apakah mau di ambil atau kami bantu delivery ke rumah.\n\nTerima kasih! 	scheduled_for_delivery	t	2025-06-05 07:39:49.502	2025-06-26 07:05:15.109	PegeDev	{name,code}	transaction_update
 \.
 
 
@@ -170,9 +170,10 @@ b3979e8c-301e-4975-acc5-02b918eea8e3	6285641298460	Leni	\N	\N	6285641298460	user
 26ec8c93-3732-4fd7-a29f-5d58525457b4	62895384501721	Kak Sefti	\N	\N	62895384501721	user	f	Walk in cust	2025-06-23 02:50:18.359
 6cf0f39d-1c83-46e5-871a-13ad7173ed22	6281310176309	Tania	\N	\N	6281310176309	user	f	Aster 1 no 11	2025-06-23 10:53:37.183
 034ccd5d-8077-46ec-8872-31f64a1a2bfc	6281299071805	Jeannie	\N	\N	6281299071805	user	f	Gardenia 7 no 28	2025-06-21 08:33:34.188
-dcb35464-9275-4081-a5e2-8b7d47fd8093	62895404639469	Ayu	\N	\N	62895404639469	user	f	Jackkids	2025-06-24 03:11:30.24
-8e9b73a3-dcac-42dd-8c29-910875bba5c4	6287889556949	Aurel	\N	\N	6287889556949	user	f	Aster 6 no 16	2025-06-25 12:01:15.199
 f3c9c1fa-7a20-433b-a45d-580c5eacce59	6285692219589	Ibu Fani	\N	\N	6285692219589	user	f	Warteg 	2025-06-20 12:30:54.024
+8e9b73a3-dcac-42dd-8c29-910875bba5c4	6287889556949	Aurel	\N	\N	6287889556949	user	f	Aster 6 no 16	2025-06-25 12:01:15.199
+c664e39d-231b-4e8d-b79b-9b2e818fab06	088289622276	Fariz	\N	\N	6288289622276	user	f	Cendana parc 12 no 32	2025-06-26 07:40:15.877
+dcb35464-9275-4081-a5e2-8b7d47fd8093	62895404639469	Ayu	\N	\N	62895404639469	user	f	Jackkids	2025-06-24 03:11:30.24
 \.
 
 
@@ -201,6 +202,8 @@ d3f510f8-de2e-4c1b-920e-f30df1981bc3	Satuan Regular	Layanan laundry satuan untuk
 f77e9ad8-fcd2-4f7c-9027-9a59e5ada498	Spot cleaning underarm	Spot cleaning untuk bagian bawah lengan kiri dan kanan	https://utfs.io/f/iSlriPAgTrQN7klDqILrhXAtECUoHNpYvPk1awneODzMlxIJ	17500	kg
 754e3d45-1add-4b47-83b8-c56f7d6df21f	Whole spot clean small	Pembersihan noda luntur di baju ukuran small	https://utfs.io/f/iSlriPAgTrQNpKnOS5HeDCXomcFwlzhZxTGLS1rKRgq64NPQ	20000	kg
 ccc08a36-c269-46ae-a825-3857a119d369	Cuci + Setrika Regular	Cuci, kering + setrika dengan detergent standard	https://utfs.io/f/iSlriPAgTrQNpxw3b8HeDCXomcFwlzhZxTGLS1rKRgq64NPQ	11000	kg
+1b60c06d-939e-4355-a5f3-39963020802b	Perlak Satuan small-med	Perlak kain ukuran max 80cm	https://utfs.io/f/iSlriPAgTrQNEimCWrhNui37H4UvOkd2rQKbclWfhaIw0SVB	10000	kg
+7fc0d9f3-b9d9-4d32-a53b-35894908a447	Bantal / Guling	Bantal / guling ukuran standar	https://utfs.io/f/iSlriPAgTrQNkjjGZvLrgSkaGEW4HzyVjuv3CFimn1NdBp2e	15000	kg
 \.
 
 
@@ -272,17 +275,19 @@ COPY "public"."payment_methods" ("id", "name") FROM stdin;
 --
 
 COPY "public"."transactions" ("id", "code", "service_id", "payment_id", "amount", "userId", "createdAt", "typeUnit", "actualUnit", "estimatedUnit", "schedulePickup", "currentStatus", "scheduleDelivery", "customer", "rescheduleCount") FROM stdin;
+4a065461-fcae-4368-828a-14eca83ff273	INV-20250625-6870	d3f510f8-de2e-4c1b-920e-f30df1981bc3	172f7b84-6174-4c4a-b861-cc794e41e6d4	70000	8e9b73a3-dcac-42dd-8c29-910875bba5c4	2025-06-25 12:01:15.317	kg	2	2	2025-06-25 12:01:15.09	scheduled_for_delivery	2025-06-26 09:00:00	\N	0
 32720486-354f-4600-a44e-1d9f3f3bbd44	INV-20250624-0914	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	36300	dcb35464-9275-4081-a5e2-8b7d47fd8093	2025-06-24 03:11:30.358	kg	3.3	3	2025-06-24 03:11:29.97	delivered	2025-06-24 11:00:00	\N	0
 4e00a583-c47c-4053-9b2e-3532b36a52f4	INV-20250621-1913	d3f510f8-de2e-4c1b-920e-f30df1981bc3	\N	35000	034ccd5d-8077-46ec-8872-31f64a1a2bfc	2025-06-21 08:33:34.296	kg	\N	1	2025-06-21 08:33:34.073	on_progress_drying	\N	\N	0
 588ff063-ab5b-4a8d-b21a-580d0b6967a8	INV-20250622-2094	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	70400	b3979e8c-301e-4975-acc5-02b918eea8e3	2025-06-22 06:07:20.817	kg	8.8	1	2025-06-22 06:07:20.602	delivered	2025-06-22 11:00:00	\N	0
-4a065461-fcae-4368-828a-14eca83ff273	INV-20250625-6870	d3f510f8-de2e-4c1b-920e-f30df1981bc3	\N	70000	8e9b73a3-dcac-42dd-8c29-910875bba5c4	2025-06-25 12:01:15.317	kg	\N	2	2025-06-25 12:01:15.09	scheduled	\N	\N	0
 48b99594-ce28-4197-9361-080749e6e0d4	INV-20250620-3405	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	48000	f3c9c1fa-7a20-433b-a45d-580c5eacce59	2025-06-20 12:30:54.127	kg	4	4	2025-06-20 12:30:53.921	delivered	2025-06-21 07:00:00	\N	0
 e4780ebe-3e1b-41c1-bfc2-43c916f9bf19	INV-20250615-7076	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	36000	\N	2025-06-15 11:34:32.582	kg	3	3	2025-06-15 11:34:32.097	delivered	2025-06-16 05:00:00	{"phone": "6285692219589", "address": "Warteg ", "fullName": "Ibu fani"}	0
 d97dee3f-fd55-4e55-9c85-c77fad280d04	INV-20250614-1402	8242abaa-8509-4718-a9dc-aca0fb672a3e	\N	120000	\N	2025-06-14 07:42:48.998	kg	15	15	2025-06-14 07:42:48.715	delivered	2025-06-15 11:00:00	{"phone": "6285641298460", "address": "Aster 1 no 10\\n", "fullName": "Leni"}	0
 daa92a85-95d6-465d-8bec-5e3ac33ce4c3	INV-20250619-2110	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	96000	\N	2025-06-19 03:03:34.859	kg	12	12	2025-06-19 03:03:34.265	delivered	2025-06-19 13:00:00	{"phone": "6285885545678", "address": "Bugel indah b7 no 5", "fullName": "Marlina "}	0
+ca8d9c81-31ff-4e85-99b1-62cb544abebb	INV-20250626-1112	d3f510f8-de2e-4c1b-920e-f30df1981bc3	172f7b84-6174-4c4a-b861-cc794e41e6d4	405300	c664e39d-231b-4e8d-b79b-9b2e818fab06	2025-06-26 07:40:15.978	kg	11.58	7	2025-06-26 07:40:15.776	delivered	2025-06-26 09:00:00	\N	0
 cc682487-bc7a-48e7-a2ff-72a6048576e3	INV-20250623-0039	8242abaa-8509-4718-a9dc-aca0fb672a3e	172f7b84-6174-4c4a-b861-cc794e41e6d4	44000	6cf0f39d-1c83-46e5-871a-13ad7173ed22	2025-06-23 10:53:37.303	kg	5.5	5	2025-06-23 10:53:37.078	delivered	2025-06-23 15:00:00	\N	0
 1d90125f-8e1f-4583-9413-77c5c27ec32c	INV-20250625-2574	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	36300	f3c9c1fa-7a20-433b-a45d-580c5eacce59	2025-06-25 07:27:16.077	kg	3.3	3	2025-06-25 07:27:16.076	delivered	2025-06-26 03:00:00	\N	0
 c422f4b8-1eb5-49aa-9197-e4ef42342457	INV-20250623-5779	754e3d45-1add-4b47-83b8-c56f7d6df21f	54133119-effb-4601-9df0-98f4d1a56a4f	20000	26ec8c93-3732-4fd7-a29f-5d58525457b4	2025-06-23 02:50:18.477	kg	1	1	2025-06-23 02:50:18.25	on_progress_drying	\N	\N	0
+b8da1513-7285-430b-9def-cca46a0e336b	INV-20250626-3796	ccc08a36-c269-46ae-a825-3857a119d369	172f7b84-6174-4c4a-b861-cc794e41e6d4	33000	dcb35464-9275-4081-a5e2-8b7d47fd8093	2025-06-26 02:34:46.311	kg	3	3	2025-06-26 02:34:46.31	delivered	2025-06-26 09:00:00	\N	0
 \.
 
 
@@ -299,6 +304,8 @@ COPY "public"."delivery_proofs" ("id", "transactionId", "image", "receivedBy", "
 07870b23-54a1-426b-bc54-2141c8e0ba8b	cc682487-bc7a-48e7-a2ff-72a6048576e3	https://utfs.io/f/iSlriPAgTrQNq7VfgbtAwEucH0xPGBf5R8aWp3OQJ7Ke1DNr	Rumah	2025-06-24 02:19:12.176	\N	\N	2025-06-24 02:19:12.177
 459e6076-7018-4368-9bc8-ebeace93ae08	32720486-354f-4600-a44e-1d9f3f3bbd44	https://utfs.io/f/iSlriPAgTrQNt92sUWPoeS5duFmhZRJwYbNiD8flx2C7jp4P	Ayu	2025-06-24 09:33:42.308	\N	\N	2025-06-24 09:33:42.309
 1b01c011-3063-40ee-a0f9-7f572abff7b4	1d90125f-8e1f-4583-9413-77c5c27ec32c	https://utfs.io/f/iSlriPAgTrQNvBmZf9QGl0o3OqQP6iVnj9C4aUfswFLXupR8	Fani	2025-06-26 01:46:58.109	\N	\N	2025-06-26 01:46:58.11
+3c39aa7b-37e6-4b5a-9f0c-78ff15d621e8	ca8d9c81-31ff-4e85-99b1-62cb544abebb	https://utfs.io/f/iSlriPAgTrQN5p72geOSdcy1Vmw960A5PzChJDxEe7XUMLpf	Fariz	2025-06-26 08:37:46.984	\N	\N	2025-06-26 08:37:46.985
+12043e93-e6ff-4eaf-9bfe-233efc000db4	b8da1513-7285-430b-9def-cca46a0e336b	https://utfs.io/f/iSlriPAgTrQN4ss3ybwmIAzBXe2jwnS69tUFdpZqYi7EgfNV	Pelanggan	2025-06-26 08:44:55.76	\N	\N	2025-06-26 08:44:55.762
 \.
 
 
@@ -407,6 +414,25 @@ a1e4ba4e-3069-4b8d-9eae-2e1b62343880	1d90125f-8e1f-4583-9413-77c5c27ec32c	on_pro
 6a2f48ee-f181-4a0c-aecd-228f06eb51d6	1d90125f-8e1f-4583-9413-77c5c27ec32c	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-26T03:00:00.000Z"}	2025-06-26 01:45:56.686	2025-06-26 01:45:56.686
 2eab634a-8e80-4399-8aae-0900296d8562	1d90125f-8e1f-4583-9413-77c5c27ec32c	out_for_delivery		\N	{}	2025-06-26 01:45:59.955	2025-06-26 01:45:59.955
 f4494446-f219-437b-a245-ba6eb1f3c0f8	1d90125f-8e1f-4583-9413-77c5c27ec32c	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQNvBmZf9QGl0o3OqQP6iVnj9C4aUfswFLXupR8", "receivedBy": "Fani"}	2025-06-26 01:46:58.066	2025-06-26 01:46:58.066
+08f9f3c0-8c37-498f-aa6a-6e837a416c8e	b8da1513-7285-430b-9def-cca46a0e336b	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-26 02:34:46.311	2025-06-26 02:34:46.311
+49aa19b9-46ea-460e-9518-9afcddea6148	b8da1513-7285-430b-9def-cca46a0e336b	pickup_successful		\N	{"actualUnit": 3, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-26 02:35:44.45	2025-06-26 02:35:44.45
+fc4c69d8-23ae-4830-8465-4171e6ba29fd	4a065461-fcae-4368-828a-14eca83ff273	pickup_successful		\N	{"actualUnit": 2, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-26 07:01:06.177	2025-06-26 07:01:06.177
+be4bc1c4-fb0e-416d-9e49-6e7cef25d331	4a065461-fcae-4368-828a-14eca83ff273	on_progress_washing		\N	{}	2025-06-26 07:01:31.189	2025-06-26 07:01:31.189
+6b70050e-f4d1-4b8b-b63e-b6f34e1b2c0f	4a065461-fcae-4368-828a-14eca83ff273	on_progress_drying		\N	{}	2025-06-26 07:01:35.261	2025-06-26 07:01:35.261
+551745ec-5f3e-4512-beec-41fdaa939368	4a065461-fcae-4368-828a-14eca83ff273	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-26T09:00:00.000Z"}	2025-06-26 07:06:24.233	2025-06-26 07:06:24.233
+01a2434c-3dc8-4dd2-9256-43f625576a99	ca8d9c81-31ff-4e85-99b1-62cb544abebb	scheduled	Transaction created manually by admin	04cf4dcc-bb43-4367-b980-55fe5f6d1506	\N	2025-06-26 07:40:15.978	2025-06-26 07:40:15.978
+47e03bd2-31cb-44d4-bfaa-747562c00ede	ca8d9c81-31ff-4e85-99b1-62cb544abebb	pickup_successful		\N	{"actualUnit": 11.58, "paymentMethod": "172f7b84-6174-4c4a-b861-cc794e41e6d4"}	2025-06-26 07:42:28.794	2025-06-26 07:42:28.794
+73f3fd9e-60f6-48ed-bac9-a27440c26efc	ca8d9c81-31ff-4e85-99b1-62cb544abebb	on_progress_washing		\N	{}	2025-06-26 07:42:34.153	2025-06-26 07:42:34.153
+f18a5a4d-ae5a-4db2-b260-596659f922ea	ca8d9c81-31ff-4e85-99b1-62cb544abebb	on_progress_drying		\N	{}	2025-06-26 07:42:37.728	2025-06-26 07:42:37.728
+bf30868d-ba70-4d78-9855-396399959f52	ca8d9c81-31ff-4e85-99b1-62cb544abebb	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-26T09:00:00.000Z"}	2025-06-26 07:42:46.237	2025-06-26 07:42:46.237
+c20da269-7f32-4032-a8b6-9825c49dced1	ca8d9c81-31ff-4e85-99b1-62cb544abebb	out_for_delivery		\N	{}	2025-06-26 07:43:46.881	2025-06-26 07:43:46.881
+d540b25b-0584-49ba-9a48-acab9030a4a4	ca8d9c81-31ff-4e85-99b1-62cb544abebb	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQN5p72geOSdcy1Vmw960A5PzChJDxEe7XUMLpf", "receivedBy": "Fariz"}	2025-06-26 08:37:46.939	2025-06-26 08:37:46.939
+777fef2e-9ae5-428a-8096-61518b8279f0	b8da1513-7285-430b-9def-cca46a0e336b	on_progress_washing		\N	{}	2025-06-26 08:43:45.599	2025-06-26 08:43:45.599
+471a0faa-dd9a-4cf7-8186-c7d6918f7ddf	b8da1513-7285-430b-9def-cca46a0e336b	on_progress_drying		\N	{}	2025-06-26 08:43:49.331	2025-06-26 08:43:49.331
+5bcb89a0-e3df-4488-94aa-5626bb0189b3	b8da1513-7285-430b-9def-cca46a0e336b	on_progress_ironing		\N	{}	2025-06-26 08:43:52.939	2025-06-26 08:43:52.939
+916fe6b8-1c76-43a5-a6d8-2393d59349ac	b8da1513-7285-430b-9def-cca46a0e336b	scheduled_for_delivery		\N	{"scheduleDelivery": "2025-06-26T09:00:00.000Z"}	2025-06-26 08:43:57.181	2025-06-26 08:43:57.181
+cf2d1817-a257-49ce-897a-ce81707b47c3	b8da1513-7285-430b-9def-cca46a0e336b	out_for_delivery		\N	{}	2025-06-26 08:44:01.078	2025-06-26 08:44:01.078
+e6bed1ad-4c76-4c7d-b285-0b6e20cbe339	b8da1513-7285-430b-9def-cca46a0e336b	delivered		\N	{"podImg": "https://utfs.io/f/iSlriPAgTrQN4ss3ybwmIAzBXe2jwnS69tUFdpZqYi7EgfNV"}	2025-06-26 08:44:55.722	2025-06-26 08:44:55.722
 \.
 
 
